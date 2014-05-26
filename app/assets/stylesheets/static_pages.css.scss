@@ -39,6 +39,7 @@ footer {
 }
 
 i {
+  color: black;
   //background-color: yellow;
   background:rgba(255,255,0,0.5);
   opacity: 0.8;
@@ -64,6 +65,7 @@ i {
   padding-top: 10px;
   opacity: 0.4;
   color: yellow;
+
 }
 
 div > small {
@@ -93,6 +95,9 @@ div > small {
   opacity: 0.5;
   text-shadow: 0 0 1px #000;
   color: hsla(0,0%,0%,0);
+}
+b {
+  font-family: Helvetica, Arial ,sans-serif;
 }
 .crd-phone {
   background-color: yellow;
