@@ -1,0 +1,134 @@
+// Place all the styles related to the StaticPages controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+html {
+  //overflow-y: scroll;
+  overflow-x: hidden;
+}
+body {
+  //background-color: $body-bg-color;
+  //padding-top: 60px;
+  //background: url('http://fin6.com/wp-content/uploads/2013/12/1eefc5567dc5c55f67ef6849b92355826.jpg');
+  background: url('back.jpg');
+  background-size:cover;
+  color: white;
+}
+html,body{
+    height: 100%
+}
+
+#wrapper{
+    min-height: 100%;
+    position:relative;
+}
+#main{
+  //min-height: 670px;
+  padding-bottom: 160px;    /* height of footer */
+}
+header {
+  padding-top: 40px;
+}
+footer {
+  height: 160px; 
+  width:100%;
+  position: absolute;
+  left: 0;
+  bottom: 0; 
+  background:rgba(0,0,0,0.2);
+  padding-top: 20px;
+}
+
+i {
+  //background-color: yellow;
+  background:rgba(255,255,0,0.5);
+  opacity: 0.8;
+  text-shadow: 0 0 1px #000;
+  //color: hsla(0,0%,0%,0);
+}
+
+.sub {
+  font-family: 'Bangers', Impact, Charcoal, sans-serif, cursive;
+  font-size: 24px;
+  opacity: 0.8;
+  text-shadow: 0 0 1px #000;
+  color: hsla(0,0%,0%,0);
+  padding-top: 10px;
+}
+
+.list {
+  font-family: 'Bangers', Impact, Charcoal, sans-serif, cursive;
+  font-size: 24px;
+  //opacity: 0.8;
+  text-shadow: 0 0 1px #000;
+  //color: hsla(0,0%,0%,0);
+  padding-top: 10px;
+  opacity: 0.4;
+  color: yellow;
+}
+
+div > small {
+  float:right;
+  font-family: 'Bangers', Impact, Charcoal, sans-serif, cursive;
+  font-size: 16px;
+  opacity: 0.5;
+  text-shadow: 0 0 1px #000;
+  color: hsla(0,0%,0%,0);
+  padding-top: 10px;
+}
+.home {
+  padding-top: 30px;
+}
+.crd-brand {
+  font-family: 'Bangers', Impact, Charcoal, sans-serif, cursive;
+  font-size: 42px;
+  opacity: 0.5;
+  text-shadow: 0 0 1px #000;
+  color: hsla(0,0%,0%,0);
+  color: yellow;
+}
+.stamp {
+  padding-top: 40px;
+  font-family: 'Bangers', Impact, Charcoal, sans-serif, cursive;
+  font-size: 94px;
+  opacity: 0.5;
+  text-shadow: 0 0 1px #000;
+  color: hsla(0,0%,0%,0);
+}
+.crd-phone {
+  background-color: yellow;
+  padding-top: 30px;
+  padding-right: 5px;
+  font-family: 'Bangers', Impact, Charcoal, sans-serif, cursive;
+  font-size: 42px;
+  opacity: 0.5;
+  text-shadow: 0 0 1px #000;
+  color: hsla(0,0%,0%,0);
+}
+#brand2 {
+  opacity: 0.8;
+  text-shadow: 0 0 1px #000;
+}
+
+/* Landscape phone to portrait tablet */
+@media (max-width: 767px) {
+  .list {
+    //font-family: Impact, Charcoal, sans-serif, cursive;
+    opacity: 0.4;
+    color: yellow;
+  }
+  .crd-phone {
+    background-color: yellow;
+    float: right;
+    padding-top: 0px;
+    padding-right: 5px;
+    font-family: 'Bangers', Impact, Charcoal, sans-serif, cursive;
+    font-size: 32px;
+    opacity: 0.5;
+    text-shadow: 0 0 1px #000;
+    color: hsla(0,0%,0%,0);
+  }
+}
+ 
+/* Landscape phones and down */
+@media (max-width: 480px) {
+}

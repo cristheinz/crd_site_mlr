@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Mudanças Luz</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <%= stylesheet_link_tag    "application", :media => "all" %>
+  <%= javascript_include_tag "application" %>
+  <%= csrf_meta_tags %>
+  <%= render 'layouts/shim' %>
+  <%= render 'layouts/tags' %>
+  <%= render 'layouts/ga' if Rails.env.production? %>
+</head>
+<body>
+	<div id="wrapper">
+		<%= render 'layouts/header' %>
+		<div id="main" class="container">
+			<%= render 'layouts/browsercheck' %>
+			<%= yield %>
+		</div>
+		<%= render 'layouts/footer' %>
+	</div>
+</body>
+</html>
