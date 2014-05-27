@@ -38,49 +38,7 @@ footer {
   padding-top: 20px;
 }
 
-i {
-  color: black;
-  //background-color: yellow;
-  background:rgba(255,255,0,0.5);
-  opacity: 0.8;
-  text-shadow: 0 0 1px #000;
-  //color: hsla(0,0%,0%,0);
-}
-
-.sub {
-  font-family: 'Bangers', Impact, Charcoal, sans-serif, cursive;
-  font-size: 24px;
-  opacity: 0.8;
-  text-shadow: 0 0 1px #000;
-  color: hsla(0,0%,0%,0);
-  padding-top: 10px;
-}
-
-.list {
-  font-family: 'Bangers', Impact, Charcoal, sans-serif, cursive;
-  font-size: 24px;
-  //opacity: 0.8;
-  text-shadow: 0 0 1px #000;
-  //color: hsla(0,0%,0%,0);
-  padding-top: 10px;
-  opacity: 0.4;
-  color: yellow;
-
-}
-
-div > small {
-  float:right;
-  font-family: 'Bangers', Impact, Charcoal, sans-serif, cursive;
-  font-size: 16px;
-  opacity: 0.5;
-  text-shadow: 0 0 1px #000;
-  color: hsla(0,0%,0%,0);
-  padding-top: 10px;
-}
-.home {
-  padding-top: 30px;
-}
-.crd-brand {
+#brand {
   font-family: 'Bangers', Impact, Charcoal, sans-serif, cursive;
   font-size: 42px;
   opacity: 0.5;
@@ -88,18 +46,11 @@ div > small {
   color: hsla(0,0%,0%,0);
   color: yellow;
 }
-.stamp {
-  padding-top: 40px;
-  font-family: 'Bangers', Impact, Charcoal, sans-serif, cursive;
-  font-size: 94px;
-  opacity: 0.5;
+#slogan {
+  opacity: 0.8;
   text-shadow: 0 0 1px #000;
-  color: hsla(0,0%,0%,0);
 }
-b {
-  font-family: Helvetica, Arial ,sans-serif;
-}
-.crd-phone {
+#phone {
   background-color: yellow;
   padding-top: 30px;
   padding-right: 5px;
@@ -109,31 +60,80 @@ b {
   text-shadow: 0 0 1px #000;
   color: hsla(0,0%,0%,0);
 }
-#brand2 {
+
+h1 {
+  font-family: 'Bangers', Impact, Charcoal, sans-serif, cursive;
+  font-size: 94px;
+  opacity: 0.5;
+  text-shadow: 0 0 1px #000;
+  color: hsla(0,0%,0%,0);
+  text-align: center;
+  padding-top: 30px;
+}
+h1 > strong, ul > li > strong {
+  //font-family: Helvetica, Arial ,sans-serif;
+  font-family: 'Lucida Console';
+  font-weight: 800;
+}
+h2 {
+  font-family: 'Bangers', Impact, Charcoal, sans-serif, cursive;
+  font-size: 24px;
+  opacity: 0.8;
+  text-shadow: 0 0 1px #000;
+  color: hsla(0,0%,0%,0);
+  text-align: center;
+  //padding-top: 10px;
+}
+h3 {
+  float:right;
+  font-family: 'Bangers', Impact, Charcoal, sans-serif, cursive;
+  font-size: 16px;
+  opacity: 0.5;
+  text-shadow: 0 0 1px #000;
+  color: hsla(0,0%,0%,0);
+  padding-top: 10px;
+}
+ul > li {
+  font-family: 'Bangers', Impact, Charcoal, sans-serif, cursive;
+  font-size: 24px;
+  //opacity: 0.8;
+  text-shadow: 0 0 1px #000;
+  //color: hsla(0,0%,0%,0);
+  padding-top: 10px;
+  opacity: 0.4;
+  color: yellow;
+}
+
+#home {
+  padding-top: 30px;
+}
+#home > p > i {
+  color: black;
+  background:rgba(255,255,0,0.5);
   opacity: 0.8;
   text-shadow: 0 0 1px #000;
 }
 
+
+
+
 /* Landscape phone to portrait tablet */
 @media (max-width: 767px) {
-  .list {
-    //font-family: Impact, Charcoal, sans-serif, cursive;
-    opacity: 0.4;
-    color: yellow;
-  }
-  .crd-phone {
-    background-color: yellow;
-    float: right;
-    padding-top: 0px;
-    padding-right: 5px;
-    font-family: 'Bangers', Impact, Charcoal, sans-serif, cursive;
-    font-size: 32px;
-    opacity: 0.5;
-    text-shadow: 0 0 1px #000;
-    color: hsla(0,0%,0%,0);
+  #phone {
+    top: 0;
+    right: 0;
+    position: absolute;
+    padding-top: 50px;
+    padding-bottom: 10px;
   }
 }
  
 /* Landscape phones and down */
 @media (max-width: 480px) {
+  #phone {
+    position: relative;
+    float: right;
+    padding-top: 10px;
+    padding-right: 5px;
+  }
 }
